@@ -10,7 +10,5 @@ Frontend: HTML/CSS
 
 Auth: Custom API Key
 
-No database — uses in-memory storage for alerts
-
 Modular design (MVC structure)
 
