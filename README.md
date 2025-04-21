@@ -12,3 +12,10 @@ Auth: Custom API Key
 
 Modular design (MVC structure)
 
+## 🧪 How to Run the App
+
+### 📥 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/stock-anomaly-detector.git
+cd stock-anomaly-detector
