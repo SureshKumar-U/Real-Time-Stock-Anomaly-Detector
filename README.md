@@ -39,7 +39,7 @@ npm start
 
 URL: http://localhost:8080/
 
-<img src="./public/images/auth.png>
+<img src="https://github.com/SureshKumar-U/Real-Time-Stock-Anomaly-Detector/public/images/auth.png>
 
 Description: The authentication page where users can submit an API key to access the stock feed and alerts.
 
@@ -47,7 +47,7 @@ View:  A simple form with an input field for the API key and a submit button.
 
 When the API key is submitted, the user will be authenticated to access the rest of the application.
 
-<img src="./public/images/auth.png>
+<img src="https://github.com/SureshKumar-U/Real-Time-Stock-Anomaly-Detector/public/images/auth.png>
 
 
 ### 2. Alerts Page (/alerts.html)
