@@ -54,7 +54,8 @@ When the API key is submitted, the user will be authenticated to access the rest
 
 URL: http://localhost:8080/alerts.html
 
-![screenshot](https://github.com/SureshKumar-U/Real-Time-Stock-Anomaly-Detector/blob/main/public/images/alerts.png>)
+![screenshot](https://github.com/SureshKumar-U/Real-Time-Stock-Anomaly-Detector/blob/main/public/images/alerts.png)
+
 
 
 Description: This page displays the last 10 alerts detected by the anomaly detection system.
