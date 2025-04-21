@@ -35,7 +35,7 @@ npm start
 
 ## UI Pages
 
-### 1. Base URL (/)
+### 1. Auth page (/)
 
 URL: http://localhost:8080/
 
