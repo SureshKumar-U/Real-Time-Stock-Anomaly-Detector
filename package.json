@@ -1,0 +1,15 @@
+{
+  "name": "real-time-stock-anomaly-detector",
+  "version": "1.0.0",
+  "description": "A Node.js service that simulates real-time stock price updates and detects unusual price behavior (anomalies) based on customizable strategies.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
