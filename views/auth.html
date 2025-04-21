@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stock Alert Auth</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <p class="apikey">API KEY = Stockanamoly123</p>
+    <h2>Enter API Key</h2>
+    <input type="password" id="apiKey" placeholder="API Key">
+    <button onclick="login()">Submit</button>
+  </div>
+
+  <script>
+    function login() {
+      const key = document.getElementById('apiKey').value;
+      if (!key) return alert("API Key is required");
+      localStorage.setItem('apiKey', key);
+      window.location.href = 'alerts.html';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stock Alerts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Last 10 Stock Alerts</h2>
+    <div id="alerts"></div>
+  </div>
+
+  <script>
+    async function fetchAlerts() {
+      const apiKey = localStorage.getItem('apiKey');
+      if (!apiKey) return window.location.href = 'auth.html';
+
+
+
+      try {
+
+      
+
+     
+        const res = await fetch('/api/alerts', {
+          headers: { Authorization: `Bearer ${apiKey}` }
+        });
+
+        if (!res.ok) {
+          throw new Error("Unauthorized or failed to fetch alerts");
+        }
+
+        const alerts = await res.json();
+        const alertBox = document.getElementById('alerts');
+
+        if (alerts.length === 0) {
+          alertBox.innerHTML = "<p>No alerts yet.</p>";
+        } else {
+          alertBox.innerHTML = alerts.map(alert => `
+            <div class="alert">
+              <strong>${alert.symbol}</strong><br>
+              <small>${new Date(alert.timestamp).toLocaleString()}</small><br>
+              ${alert.reason}
+            </div>
+          `).join('');
+        }
+
+      } catch (err) {
+        alert(err.message);
+        localStorage.removeItem('apiKey');
+        window.location.href = 'auth.html';
+      }
+    }
+    setInterval(()=> fetchAlerts(), 3000)
+  </script>
+</body>
+</html>
