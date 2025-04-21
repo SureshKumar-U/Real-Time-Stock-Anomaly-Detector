@@ -14,8 +14,21 @@ Modular design (MVC structure)
 
 ## 🧪 How to Run the App
 
-### 📥 1. Clone the Repository
+###  1. Clone the Repository
 
 ```bash
 git clone https://github.com/your-username/stock-anomaly-detector.git
 cd stock-anomaly-detector
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3.Start the App
+
+```bash
+npm start
+```
